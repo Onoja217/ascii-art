@@ -10,6 +10,7 @@ func main() {
 	}
 
 	input := os.Args[1]
+	input = strings.ReplaceAll(input, "\\n", "\n")
 
 	bannerFile := getBannerFile(os.Args)
 	if bannerFile == "" {
